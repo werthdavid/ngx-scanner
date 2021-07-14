@@ -221,7 +221,11 @@ export class ZXingScannerComponent implements OnInit, OnDestroy {
       return;
     }
 
-    this.setDevice(device);
+    this.setDevice(device).catch(
+        (error: any) => {
+            console.error('@zxing/ngx-scanner', 'Error while setting the device.', error);
+        }
+    );
   }
 
   /**

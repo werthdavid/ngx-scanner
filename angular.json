@@ -74,7 +74,10 @@
             "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true
+            "namedChunks": true,
+            "allowedCommonJsDependencies": [
+                "@zxing/library"
+            ]
           },
           "configurations": {
             "production": {

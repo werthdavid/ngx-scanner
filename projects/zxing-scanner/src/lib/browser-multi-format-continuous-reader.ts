@@ -63,7 +63,7 @@ export class BrowserMultiFormatContinuousReader extends BrowserMultiFormatReader
 
         // probably fatal error
         scan$.error(error);
-        this.scannerControls.stop();
+        this.scannerControls?.stop();
         this.scannerControls = undefined;
         return;
       });
